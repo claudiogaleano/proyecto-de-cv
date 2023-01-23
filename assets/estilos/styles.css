@@ -1,0 +1,109 @@
+/**google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: darkmagenta;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 60px;
+    background: rgba(0, 0, 0, .90);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-bar li{
+    display: none;
+    line-height: 50px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-bar li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-bar li a.active, .nav-bar li a:hover {
+    color: rgb(157, 19, 157);
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-bar {
+    height: 50vh;
+}
+
+#check:checked~.nav-bar li{
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+    .nav-bar{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        margin-right: 50px;
+    }
+    .nav-bar li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0px 20px;
+        transition: none;
+    }
+    .nav-bar li a{
+        font-size: 15px;
+
+    }
+}
+
+section

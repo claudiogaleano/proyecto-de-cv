@@ -12,13 +12,15 @@
 }
 body{
     font-family: 'Raleway', sans-serif;
+    background-image: url(/assets/imagen/circuito-electrico-de-fondo-verde-2erpec2.jpg);
+    background-size: cover;
 }
+
 
 header{
     font-family: "Montserrat", sans-serif;
     width: 100%;
-    height: 100%;
-    background-color: darkmagenta;
+    background-color:rgb(91, 255, 110);
     background-position: center;
     background-size: cover;
 }
@@ -61,11 +63,12 @@ nav{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .nav-bar li a.active, .nav-bar li a:hover {
-    color: rgb(157, 19, 157);
     transition: .3s;
+    color: rgb(90, 96, 98);
 }
 
 #check{
@@ -82,7 +85,7 @@ nav{
 
 @media screen and (min-width: 768px){
     nav{
-        height: 100px;
+        height: 60px;
     }
     .bar-btn{
         display: none;
@@ -102,13 +105,16 @@ nav{
         line-height: 100px;
         margin: 0px 20px;
         transition: none;
+        
     }
     .nav-bar li a{
         font-size: 15px;
-
+        text-decoration: none;
     }
-}
 
+    
+}
+/** seccion hero */
 section#hero{
     background-image: url(/assets/imagen/imagendesarrollo1.png);
     background-repeat: no-repeat;
@@ -117,31 +123,199 @@ section#hero{
     background-position: center;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
     align-items: center;
+    align-content: space-between;
 }
 #box-hero{
     margin-left: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 h1#hero_title{
-   text-align: center;
    font-size: 50px;
    font-weight: 700;
+   color: lightgreen;
+   text-shadow: 10px;
+
 }
+
 h2#hero_subtitle{
-    text-align: center;
+    color: darkseagreen;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .botonhero{
     color: white;
     font-size: 20px;
-    text-decoration: none;
     
+    
+}
+a#boton-link{
+    border: 2px black solid;
+    border-radius: 50px;
+    padding: 4px;
+    background-color: aquamarine;
+    text-decoration: none;
+    font-weight: 700;
+}
+/**--------------------section info*/
+section#info{
+    padding: 5px;
+}
+section#info div.contenedor{
+    display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 50px;
+        padding: 20px;
+        background-color: rgba(33, 191, 99, 0.60);
+        border-radius: 20px;
+        flex-direction: column;
+        align-content: center;
+}
+.col{
+    flex: 1 0 0%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid ;
+    border-radius: 30px;
+    background-color: lavender;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row{
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+div.row-tarj{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+div.col-5{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+img.img-fluid{
+    border-radius: 50%;
+}
+
+div.col-7{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+h3.titulo{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+
+p{
+    margin-left: 30px;
+}
+div.tarj-exp h4{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+/**--------------section experiencia*/
+section#experience div.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(33, 191, 99, 0.60);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    
+}
+.tarj-exp{
+    background-color: rgb(16, 69, 38);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.row-exp{
+    text-align: center;
+}
+div.text-exp{
+    padding: 5px 25px;
+}
+p.parr-exp{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+/**----seccion habilidades---- */
+section#habilities {
+    padding: 5px;
+}
+
+section#habilities div.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(33, 191, 99, 0.60);
+    border-radius: 20px;
+    flex-direction: column;
+    align-content: center;
+}
+div.row-hab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+div.contenedor-row{
+    display: flex;
+        justify-content: space-between;
+        
+}
+div.contenedor-radio{
+    display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+}
+div.radio{
+    height: 15px;
+    width: 15px;
+    border: 2px solid black;
+    margin: 5px 10px;
+
 }

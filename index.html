@@ -17,32 +17,33 @@
 </head>
 <body>
     <main>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav-bar">
+                    <li class="nav-item">
+                        <a class="active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Informacion Personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#habilities">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <section id="hero" >
-            <header>
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="bar-btn">
-                        <i class="fa-solid fa-bars"></i>
-                    </label>
-                    <ul class="nav-bar">
-                        <li class="nav-item">
-                            <a class="active" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#info">Informacion Personal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#experience">Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#habilities">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            
             <div id="box-hero" class="contenedor">
                     <h1 id="hero_title">Claudio Alberto Galeano</h1>
                     <h2 id="hero_subtitle"> Pasante Developer</h2>>
@@ -176,13 +177,13 @@
                         <div class="contenedor-row">
                             <span class="sub-title-hab">Flexibilidad</span>
                             <div class="contenedor-radio">
-                                <div class="radio" >
+                                <div class="radio-b">
                                 </div>
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
                             </div>    
                         </div>
@@ -191,9 +192,9 @@
                         <div class="contenedor-row">
                             <span class="sub-title-hab">Organizacion</span>
                             <div class="contenedor-radio">
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
                                 <div class="radio">
                                 </div>
@@ -206,11 +207,11 @@
                     <div class="contenedor-row">
                         <span class="sub-title-hab">Puntualidad</span>
                         <div class="contenedor-radio">
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
                             <div class="radio">
                             </div>
@@ -221,7 +222,7 @@
                     <div class="contenedor-row">
                         <span class="sub-title-hab">Autonomía</span>
                         <div class="contenedor-radio">
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
                             <div class="radio">
                             </div>
@@ -236,11 +237,11 @@
                     <div class="contenedor-row">
                         <span class="sub-title-hab">Trabajo en Equipo</span>
                         <div class="contenedor-radio">
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
                             <div class="radio">
                             </div>
@@ -251,9 +252,9 @@
                     <div class="contenedor-row">
                         <span class="sub-title-hab">Liderazgo</span>
                         <div class="contenedor-radio">
-                            <div class="radio" >
+                            <div class="radio-b" >
                             </div>
-                            <div class="radio">
+                            <div class="radio-b">
                             </div>
                             <div class="radio">
                             </div>
@@ -266,11 +267,11 @@
                         <div class="contenedor-row">
                             <span class="sub-title-hab">Resolucion de problemas</span>
                             <div class="contenedor-radio">
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
-                                <div class="radio">
+                                <div class="radio-b">
                                 </div>
                                 <div class="radio">
                                 </div>
@@ -278,33 +279,119 @@
                         </div>
                     </div>
                 </div>
+                <div id="tech" class="contenedor-row-hab">
+                    <h4 class="sub-title-tech">tech</h4>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">Html
+                            </span>
+                            <span>70%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--70">
+                            <div id="html-barra"></div>
+                        </div>
+                    </div>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">Css
+                            </span>
+                            <span>45%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--70">
+                            <div id="css-barra"></div>
+                        </div>
+                    </div>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">Javascript
+                            </span>
+                            <span>30%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--70">
+                            <div id="js-barra"></div>
+                        </div>
+                    </div>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">Ms oficce
+                            </span>
+                            <span>80%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--70">
+                            <div id="ms-barra"></div>
+                        </div>
+                    </div>
+                    <h4 class="sub-title-tech">Design</h4>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">Fotoshop
+                            </span>
+                            <span>60%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--60">
+                            <div id="foto-barra"></div>
+                        </div>
+                    </div>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">Ilustrator
+                            </span>
+                            <span>30%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--30">
+                            <div id="ilu-barra"></div>
+                        </div>
+                    </div>
+                    <h4 class="sub-title-tech">Multimedia</h4>
+                    <div class="row-hab">
+                        <div class="contenedor-row">
+                            <span class="sub-title-hab">After efects
+                            </span>
+                            <span>50%</span>
+                        </div>
+                        <div class="hab-bar hab-bar--50">
+                            <div id="after-barra"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">
-            <div>
-                <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 250" preserveAspectRatio="none"
-                        style="height: 100%; width: 100%;">
-                        <path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z"
-                            style="stroke: none; fill: #08f;width: 100%;"></path>
-                    </svg></div>
-                <form>
-                    <h2 class="titulo">Contacta conmigo!</h2>
-                    <div>
-                        <label>Nombre</label>
-                        <input type="text">
+            <div class="contenedor">
+                <h3 id="title-contact" class="titulo">Contacta conmigo!</h3>
+                <div>
+                <form id="formulario">
+                    <div class="fila">
+                        <label for="nombre">Nombre</label>
+                        <input placeholder="Tu nombre" name="nombre" type="text" class="form-imput" required>
                     </div>
-                    <div>
-                        <label>Asunto</label>
-                        <input type="text" placeholder="Escribe tu asunto">
+                    <div class="fila">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" name="asunto" class="form-imput" placeholder="Escribe tu asunto" required>
                     </div>
-                    <div>
-                        <label>Mensaje</label>
-                        <textarea></textarea>
+                    <div class="fila">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-imput" placeholder="Escribe tu correo" required>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <div class="fila">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea placeholder="mensaje" name="mensaje" class="form-imput" required></textarea>
+                    </div>
+                    <button type="submit"  value="send">ENVIAR</button>
                 </form>
+                </div>
+                
+            </div>
+            <p id="gracias">Argentina 4.0</p>
+            <button id="button-gracias" type="button">click aqui</button>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M-79.91,143.19 C405.42,127.45 160.49,45.77 500.00,49.85 L500.00,149.60 L12.64,165.83 Z"
+                        style="stroke: none; fill: #E6F196;"></path>
+                    </svg>
             </div>
         </section>
     </main>
+    <script src="/assets/funciones.js"></script>
 </body>
 </html>
